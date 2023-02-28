@@ -4,96 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="footer.css">
     <title>CodeChella</title>
 </head>
 <body>
     <header>
-        <img src="#" alt="Logo">
-        <ul id="menu-header">
-            <li>A experiência</li>
-            <li>Mapa de Setores</li>
-            <li>Informações</li>
-            <li>Ingresso</li>
-        </ul>
+        <div class="header-container">
+            <img src="img/logo-branca.png" alt="Logo">
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#">A experiência</a></li>
+                    <li><a href="#">Mapa de Setores</a></li>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="#">Ingresso</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     <main>
         <!--BANNER-->
-        <section>
-            <img src="#" alt="Boas-vindas ao CodeChella 2023">
-        </section>
-        <!--SOBRE-->
-        <section>
-            <img src="#" alt="Festival">
-            <h3>&lt; 11 e 12 de Março &gt; Aluródromo de São Paulo</h3>
-            <p>Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
-            <button>Comprar ingresso!</button>
-        </section>
-        <!--LINE-UP-->
-        <section>
-            <h1>/Line-Up/</h1>
-            <!--DIA 1-->
-            <section>
-                <h2>SÁBADO &lt;11/03&gt;</h2>
-                <ul>
-                    <li>Sytem of a DOM</li>
-                </ul>
-                <ul>
-                    <li>Python Maiden</li>
-                    <li>Apollo Client 2001</li>
-                    <li>Bon Java</li>
-                    <li>NickCallback</li>
-                </ul>
-                <ul>
-                    <li>Linkin Promises</li>
-                    <li>Fullstack Fighters</li>
-                    <li>Papa React</li>
-                    <li>Angular in Chains</li>
-                </ul>
-                <ul>
-                    <li>Agnostic Front-end</li>
-                    <li>SlipkNode</li>
-                    <li>Pink Flutter</li>
-                    <li>Kiss</li>
-                </ul>
-            </section>
-            <!--DIA 2-->
-            <section>
-                <h2>DOMINGO &lt;12/03&gt;</h2>
-                <ul>
-                    <li>Lana Del Ploy</li>
-                </ul>
-                <ul>
-                    <li>Dua Lib</li>
-                    <li>The Backnd</li>
-                    <li>CSS Styles</li>
-                    <li>DJ Query</li>
-                    <li>ArrayAna Grande</li>
-                </ul>
-                <ul>
-                    <li>Miley Cypress</li>
-                    <li>The Bootstrap Boys</li>
-                    <li>Json Derulo</li>
-                    <li>CloudPlay</li>
-                    <li>Dev Lovato</li>
-                </ul>
-                <ul>
-                    <li>Kylie MiLOG</li>
-                    <li>Jenkins Brothers</li>
-                    <li>Rubycat Dolls</li>
-                </ul>
-            </section>
+        <section class="top-banner">
+            <img src="img/banner.jpeg" alt="Imagem do festival.">
+            <h1>Boas-vindas ao #CodeChella2023!</h1>
         </section>
 
-        <section>
-            <img src="#" alt="Banner">
-        </section>
-    </main>
-    <footer>
-        <img src="#" alt="Logo">
-        <p>Acesse nossas redes:</p>
-        <p>Desenvolvido por Alura.</p>
-        <p>Projeto fictício sem fins comerciais.</p>
-    </footer>
+        <div class="gradient">
+            <!--SOBRE-->
+            <section class="sobre">
+                <img src="img/sobre-festival.jpeg" alt="Imagem do festival.">
+                <div class="sobre-info">
+                    <h4>&lt; 11 e 12 de Março &gt; <br> Aluródromo de São Paulo</h4>
+                    <p>Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
+                    <button>Comprar ingresso!</button>
+                </div>
+            </section>
+
+            <!--LINE-UP-->
+            <section class="lineup">
+                <h2>/Line-Up/</h2>
+                <!--DIA 1-->
+                <section>
+                    <div class="tarja-data">
+                        <span class="left-line"></span>
+                        <div class="data-container">
+                            <h3>SÁBADO &lt;11/03&gt;</h3>
+                        </div>
+                        <span class="right-line"></span>
+                    </div>
+                    <ul>
+                        <li class="atracao-principal">Sytem of a DOM</li>
+                    </ul>
+                    <ul>
+                        <li>Python Maiden</li>
+                        <li>Apollo Client 2001</li>
+                        <li>Bon Java</li>
+                        <li>NickCallback</li>
+                    </ul>
+                    <ul>
+                        <li>Linkin Promises</li>
+                        <li>Fullstack Fighters</li>
+                        <li>Papa React</li>
+                        <li>Angular in Chains</li>
+                    </ul>
+                    <ul>
+                        <li>Agnostic Front-end</li>
+                        <li>SlipkNode</li>
+                        <li>Pink Flutter</li>
+                        <li>Kiss</li>
+                    </ul>
+                </section>
+                <!--DIA 2-->
+                <section>
+                    <div class="tarja-data">
+                        <span class="left-line"></span>
+                        <div class="data-container">
+                            <div class="data-container">
+                                <h3>DOMINGO &lt;12/03&gt;</h3>
+                            </div>
+                        </div>
+                            <span class="right-line"></span>
+                    </div>
+                    <ul class="atracao-principal">
+                        <li>Lana Del Ploy</li>
+                    </ul>
+                    <ul>
+                        <li>Dua Lib</li>
+                        <li>The Backnd</li>
+                        <li>CSS Styles</li>
+                        <li>DJ Query</li>
+                        <li>ArrayAna Grande</li>
+                    </ul>
+                    <ul>
+                        <li>Miley Cypress</li>
+                        <li>The Bootstrap Boys</li>
+                        <li>Json Derulo</li>
+                        <li>CloudPlay</li>
+                        <li>Dev Lovato</li>
+                    </ul>
+                    <ul>
+                        <li>Kylie MiLOG</li>
+                        <li>Jenkins Brothers</li>
+                        <li>Rubycat Dolls</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="bottom-banner">
+                <img src="img/festival.jpeg" alt="Imagem do festival.">
+            </section>
+                </main>
+                <footer>
+            <img src="#" alt="Logo">
+            <p>Acesse nossas redes:</p>
+            <p>Desenvolvido por Alura.</p>
+            <p>Projeto fictício sem fins comerciais.</p>
+                </footer>
+        </div>
 
     
 </body>
