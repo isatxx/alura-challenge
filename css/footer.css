@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px;
+}
+
+.footer-right {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #444444;
+    line-height: 32px;
+    text-align: center;
+
+    padding: 32px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #444444;
+}

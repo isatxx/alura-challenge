@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 /*PAGE GRADIENT*/
+
 .gradient {
     background: rgb(250,207,157);
     background: linear-gradient(0deg, rgba(250,207,157,1) 0%, rgba(252,240,221,1) 50%, rgba(191,218,230,1) 100%);
@@ -120,12 +121,8 @@
 }
 
 .data-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px;
     gap: 10px;
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -140,9 +137,6 @@
     text-align: center;
     background-color: #DF9010;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -162,4 +156,52 @@
     flex: none;
     order: 2;
     flex-grow: 1;
+}
+/*ATRACOES*/
+.atracoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding-bottom: 48px;
+
+    font-family: 'Raleway', sans-serif;
+    color: #444444;
+    text-align: center;
+}
+
+.atracao-principal {
+    font-weight: 800;
+    font-size: 2.4em;
+}
+
+.atracoes-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 32px;
+
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.atracoes-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 32px;
+
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.atracoes-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 32px;
+
+    font-weight: 500;
+    font-size: 1.3em;
 }
