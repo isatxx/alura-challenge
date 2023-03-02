@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
+:root {
+    --fonte-titulo: 'Calistoga';
+    --fonte-texto: 'Raleway';
+    --cor-fonte-titulo: #444444;
+    --cor-fonte-header: #fff;
+    
+    --cor-gradiente: linear-gradient(0deg, rgba(250,207,157,1) 0%, rgba(252,240,221,1) 50%, rgba(191,218,230,1) 100%);
+    --cor-datas: #DF9010;
+    --cor-principal: #2E7BA2; 
+}
+
 header {
-    background-color: #2E7BA2;
+    max-width: 100%;
+    background-color: var(--cor-principal);
 }
 .header-container {
 	max-width: 100%;
-    padding: 1.6em 5em;
+    padding: 16px 120px;
 }
 header .header-container {
     display: flex;
@@ -16,11 +28,13 @@ header .header-container {
 
 header img {
     height: 60px;
+    width: 233.9px;
+    height: 64px;
 }
 
 .nav-menu ul {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--fonte-texto);
     font-size: 1em;
     color: white;
 }
