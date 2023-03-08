@@ -60,6 +60,8 @@ header hr {
     display: flex;
 }
 
+/*MEDIA QUERIES*/ 
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .menu-icon {
         display: none;
