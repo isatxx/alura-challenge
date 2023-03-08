@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
 
 :root {
     --fonte-titulo: 'Calistoga', cursive;
     --fonte-texto: 'Raleway', sans-serif;
     --cor-fonte-titulo: #444444;
     
-    --cor-gradiente: linear-gradient(0deg, rgba(250,207,157,1) 0%, rgba(252,240,221,1) 50%, rgba(191,218,230,1) 100%);
+    --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, #bfdae6 100%);
     --cor-datas: #DF9010;
     --cor-principal: #2E7BA2; 
 }
@@ -15,60 +15,51 @@
 body {
     background: var(--cor-gradiente);
 }
-/*BANNER*/
+/*BANNER*/ 
 .top-banner {
+    background-color: white;
+    display: flex;
     width: 100%;
-    position: relative;
-    text-align: center;
-    height: 380px;
-}
-.top-banner img {
-    opacity: 0.3;
-    object-fit: cover;
-    width: 100%;
-    height: 380px;
-    border: 0;
+
+    justify-content: center;
+    align-items: center;
 }
 .top-banner h1 {
     font-family: var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 3.8em;
-    align-content: center;
     color: var(--cor-fonte-titulo);
+    font-size: clamp(2.375rem, 1.725rem + 2.6vw, 4rem);
+    text-align: center;
+    line-height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
-.bottom-banner img{
+.top-banner img {
     object-fit: cover;
-    width: 100%;
+    opacity: 50%;
     height: 300px;
 }
+
 /*SOBRE*/
 .sobre {
-
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 58px 64px;
-    gap: 48px;
-
+    padding: 32px;
+    gap: 32px;
 }
-
 .sobre img {
     object-fit: cover;
+    border-radius: 16px;
     width: 100%;
-    height: 320px;
-    border-radius: 10px;
+    height: 500px;
 }
-
 .sobre-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    width: 80%;
+    justify-content: center;
+    gap: 32px;
+    
 }
 .sobre-info h4 {
     font-family: var(--fonte-texto);
@@ -86,17 +77,19 @@ body {
     text-align: center;
     line-height: 30px;
 }
-.sobre-info button {
+.botao-ticket {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 16px;
     gap: 16px;
+    width: 256px;
+    height: 56px;
+    padding: 8px 16px;
 
     background-color: var(--cor-principal);
-    height: 55px;
     border-radius: 16px;
-    box-shadow: 4px 4px 0px 0px #444444;
+    box-shadow: 4px 4px 0px 0px #444444df;
 
     font-family: var(--fonte-texto);
     font-weight: 600;
@@ -104,6 +97,7 @@ body {
     color: white;
     text-align: center;
 }
+
 /*LINE-UP*/
 .lineup h2 {
     font-family: var(--fonte-titulo);
@@ -113,7 +107,7 @@ body {
     line-height: 80px;
     text-align: center;
     display: block;
-    padding: 32px 120px;
+    padding: 32px;
 }
 /*DATA*/
 .tarja-data {
@@ -121,7 +115,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding-bottom: 32px;
     gap: 32px;
 
     flex: none;
@@ -129,15 +123,10 @@ body {
     flex-grow: 0;
 
 }
-
 .data-container {
-    padding: 16px;
+    align-self: center;
     gap: 10px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
- 
 .data-container h3 {
     font-family: var(--fonte-titulo);
     font-weight: 400;
@@ -151,67 +140,109 @@ body {
     order: 0;
     flex-grow: 0;
 }
-
-.left-line {
-    border: 1px solid var(--cor-datas);
-    width: 30%;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+.data-container hr {
+    display: none;
 }
 
-.right-line {
-    border: 1px solid var(--cor-datas);
-    width: 30%;
-    flex: none;
-    order: 2;
-    flex-grow: 1;
-}
 /*ATRACOES*/
 .atracoes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 26px;
-    padding-bottom: 48px;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 16px;
 
     font-family: var(--fonte-texto);
     color: var(--cor-fonte-titulo);
     text-align: center;
 }
-
 .atracao-principal {
     font-weight: 800;
-    font-size: 2.4em;
+    font-size: 3.6em;
 }
-
 .atracoes-b {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
-    gap: 32px;
+    gap: 20px;
 
     font-weight: 700;
+    font-size: 2.6em;
+}
+.atracoes-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    font-weight: 600;
+    font-size: 2em;
+}
+.atracoes-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
     font-size: 1.8em;
 }
 
-.atracoes-c {
+/*BANNER*/ 
+.bottom-banner {
+    background-color: #c08d54;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 32px;
+    width: 100%;
 
-    font-weight: 600;
-    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-banner img {
+    object-fit: cover;
+    opacity: 60%;
+    height: 300px;
+    filter: saturate(160%);
 }
 
-.atracoes-d {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 32px;
+@media screen and (min-width: 768px) {
+    /*SOBRE*/
+    .sobre {
+        padding: 32px 64px;
+    }
+    .sobre img {
+        height: 380px;
+    }
+    /*LINE-UP*/
+    .lineup h2 {
+        font-size: 3.4em;
+    }
+    /*DATA*/
+    .data-container h3 {
+        font-size: 3.4em;
+    }
+    /*ATRACOES*/
+    .atracoes-b,
+    .atracoes-c, 
+    .atracoes-d {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-    font-weight: 500;
-    font-size: 1.3em;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 32px 64px;
+    }
+    .sobre img {
+        width: 50vw;
+    }
+    .sobre-info {
+        width: 50vw;
+    }
 }

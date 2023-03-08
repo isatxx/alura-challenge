@@ -1,59 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 :root {
-    --fonte-titulo: 'Calistoga';
-    --fonte-texto: 'Raleway';
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-texto: 'Raleway', sans-serif;
     --cor-fonte-titulo: #444444;
     
-    --cor-gradiente: linear-gradient(0deg, rgba(250,207,157,1) 0%, rgba(252,240,221,1) 50%, rgba(191,218,230,1) 100%);
+    --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, #bfdae6 100%);
     --cor-datas: #DF9010;
     --cor-principal: #2E7BA2; 
 }
 
-.footer-container{
-    max-width: 100%;
-    padding: 16px 120px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 32px;
-}
-
-
-.footer-right {
+footer p, 
+footer ul {
     font-family: var(--fonte-texto);
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--cor-fonte-titulo);
     line-height: 32px;
-
+    
+}
+.footer-container{
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.right-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
 }
 
 .logo {
     height: 60px;
-    width: 233.9px;
+    width: 218px;
     height: 64px;
 }
-
-.redes-sociais {
+.redes-sociais-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    
+}
+.icon-redes-sociais {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 8px;
+}
 
-    font-family: var(--fonte-texto);
-    font-weight: 500;
-    font-size: 1em;
-    color: var(--cor-fonte);
+@media screen and (min-width: 768px) {
+    .redes-sociais-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 32px 64px;
+
+    }
+    .left-footer {
+        width: 50%;
+        padding-left: 32px;
+    }
+    .right-footer {
+        position: absolute;
+        text-align: left;
+        flex-direction: column;
+        right: 64px;
+    }
+    .redes-sociais-container {
+        justify-content: start;
+}
 }

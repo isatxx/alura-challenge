@@ -1,48 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 :root {
-    --fonte-titulo: 'Calistoga';
-    --fonte-texto: 'Raleway';
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-texto: 'Raleway', sans-serif;
     --cor-fonte-titulo: #444444;
     --cor-fonte-header: #fff;
     
-    --cor-gradiente: linear-gradient(0deg, rgba(250,207,157,1) 0%, rgba(252,240,221,1) 50%, rgba(191,218,230,1) 100%);
+    --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, rgb(191, 218, 230) 100%);
     --cor-datas: #DF9010;
     --cor-principal: #2E7BA2; 
 }
 
-header {
-    max-width: 100%;
-    background-color: var(--cor-principal);
-}
 .header-container {
-	max-width: 100%;
-    padding: 16px 120px;
-}
-header .header-container {
+    padding: 16px 32px;
+    background-color: var(--cor-principal);
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
-
 header img {
-    height: 60px;
-    width: 233.9px;
+    width: 230px;
     height: 64px;
 }
 
-.nav-menu ul {
-    text-align: center;
-    font-family: var(--fonte-texto);
-    font-size: 1em;
-    color: white;
+.menu-icon {
+    color: var(--cor-fonte-header);
+    position: absolute;
+    z-index: 100;
+    top: 36px;
+    right: 24px;
 }
-.nav-menu li {
-    display: inline;
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 12px;
+    background-color: var(--cor-principal);
+    z-index: 100;
 }
 .nav-menu a {
-    display: inline-block;
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
     font-weight: 600;
-    padding-left: 32px;
+    text-align: center;
+    color: white;
+    padding:8px;
+}
+
+header hr {
+    width: 160px
+}
+
+.show-menu {
+    display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .menu-icon {
+        display: none;
+    }
+    header hr {
+        display: none;
+    }
+    .header-container {
+        flex-direction: column;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+    header hr {
+        display: none;
+    }
+    .header-container {
+        flex-direction: row;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 32px;
+    }
 }
