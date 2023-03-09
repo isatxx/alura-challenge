@@ -10,6 +10,7 @@
     --cor-principal: #2E7BA2; 
 }
 
+/*FOOTER*/ 
 footer p, 
 footer ul {
     font-family: var(--fonte-texto);
@@ -58,7 +59,6 @@ footer ul {
 }
 
 /*MEDIA QUERIES*/ 
-
 @media screen and (min-width: 768px) {
     .redes-sociais-container {
         flex-direction: row;

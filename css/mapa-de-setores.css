@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+
+:root {
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-texto: 'Raleway', sans-serif;
+    --cor-fonte-titulo: #444444;
+    
+    --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, #bfdae6 100%);
+    --cor-datas: #DF9010;
+    --cor-principal: #2E7BA2; 
+
+    --cor-pista-premium: #0E7DF1;
+    --cor-pista-comum: #FE016E;
+    --cor-cadeiras-terreo: #01A89E;
+    --cor-cadeiras-superiores: #3F51B5;
+    --cor-rampas: #0E7DF1;
+}
+
+/*PAGE GRADIENT*/
+body {
+    background: var(--cor-gradiente);
+}
+
+/*BANNER*/ 
+.banner {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.banner h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte-titulo);
+    font-size: clamp(2.375rem, 1.725rem + 2.6vw, 4rem);
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+}
+.banner img {
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    height: 300px;
+    opacity: 40%;
+}
+
+/*MAPA SETORES*/
+.mapa-de-setores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    object-fit: cover;
+    width: 80%;
+}
+
+/*LEGENDA*/ 
+.legenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+
+    color: var(--cor-fonte-titulo);
+    font-family: var(--fonte-texto);
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+}
+.legenda li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.legenda h4 {
+    font-size: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+
+.legenda-pista-premium,
+.legenda-pista-comum,
+.legenda-cadeiras-terreo,
+.legenda-cadeiras-superiores,
+.legenda-rampas 
+{
+    width: 30px;
+    height: 30px;
+}
+.legenda-pista-premium {
+    background-color: var(--cor-pista-premium);
+}
+.legenda-pista-comum {
+    background-color: var(--cor-pista-comum);
+}
+.legenda-cadeiras-terreo {
+    background-color: var(--cor-cadeiras-terreo);
+}
+.legenda-cadeiras-superiores {
+    background-color: var(--cor-cadeiras-superiores);
+}
+.legenda-rampas {
+    background-color: var(--cor-rampas);
+}
+
+/*DETALHES SETORES*/ 
+
+.detalhes {
+    padding: 32px;
+}
+.detalhes h2, .detalhes h3 {
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte-titulo);
+    font-weight: 700;
+    text-align: center;
+    padding: 32px 0px;
+}
+.detalhes h2 {
+    font-size: clamp(2rem, 1.8rem + 0.8vw, 2.5rem);
+}
+.detalhes h3 {
+    font-size: 32px;
+}
+
+.setor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+}
+.setor p {
+    color: var(--cor-fonte-titulo);
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.setor-img {
+    object-fit: cover;
+    width: 100%;
+    max-width:400px;
+    height: 250px;
+    border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mapa {
+        max-width: 500px;
+    }
+    .setor-img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mapa-de-setores {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 32px;
+        padding: 0 32px;
+    }
+    .mapa {
+        width: 60%;
+        max-width:600px;
+    }
+    .legenda {
+        width: 40%;
+    }
+
+    .detalhes-setores {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 32px;
+    }
+
+    .setor {
+        width: 100%;
+        max-width: 600px;
+    }
+    .setor-impar {
+        padding-top: 120px;
+    }
+    .setor-img {
+        width: 100%;
+        height: 300px;
+    }
+}

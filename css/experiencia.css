@@ -15,8 +15,9 @@
 body {
     background: var(--cor-gradiente);
 }
+
 /*BANNER*/ 
-.top-banner {
+.banner {
     display: flex;
     width: 100%;
 
@@ -24,7 +25,7 @@ body {
     align-items: center;
     padding-bottom: 16px;
 }
-.top-banner h1 {
+.banner h1 {
     font-family: var(--fonte-titulo);
     color: var(--cor-fonte-titulo);
     font-size: clamp(2.375rem, 1.725rem + 2.6vw, 4rem);
@@ -32,12 +33,13 @@ body {
     line-height: 100%;
     position: absolute;
 }
-.top-banner img {
+.banner img {
     object-fit: cover;
     mix-blend-mode: multiply;
     height: 300px;
     opacity: 40%;
 }
+
 /*CONTEUDO*/ 
 .content-container {
     display: flex;
@@ -76,7 +78,6 @@ body {
 }
 
 /*MEDIA QUERIES*/ 
-
 @media screen and (min-width: 768px) {
 
 }

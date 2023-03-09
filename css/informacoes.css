@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+
+:root {
+    --fonte-titulo: 'Calistoga', cursive;
+    --fonte-texto: 'Raleway', sans-serif;
+    --cor-fonte-titulo: #444444;
+    
+    --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, #bfdae6 100%);
+    --cor-datas: #DF9010;
+    --cor-principal: #2E7BA2; 
+}
+
+/*PAGE GRADIENT*/
+body {
+    background: var(--cor-gradiente);
+}
