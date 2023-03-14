@@ -20,18 +20,49 @@
         <a href="home.html"><img  class="logo" src="img/logo-branca.png" alt="Logo"></a>
         <span class="material-symbols-outlined menu-icon">menu</span>
         <nav class="nav-menu">
-            <a href="experiencia.html">A experiência</a>
+            <a class="nav-item" href="experiencia.html">A experiência</a>
             <hr>
-            <a href="mapa-de-setores.html">Mapa de Setores</a>
+            <a class="nav-item" href="mapa-de-setores.html">Mapa de Setores</a>
             <hr>
-            <a href="informacoes.html">Informações</a>
+            <a class="nav-item" href="informacoes.html">Informações</a>
             <hr>
-            <a href="ingresso.html">Ingresso</a>
+            <a class="nav-item active" href="ingresso.html">Ingresso</a>
         </nav>
     </header>
     
     <!--MAIN-->
     <main>
+        <!--BANNER-->
+        <section class="banner">
+            <img src="img/ingresso-banner.jpg" alt="Imagem do festival.">
+            <h1>Garanta seu Ingresso</h1>
+        </section>
+
+        <!--CONTEUDO-->
+        <section>
+            <h1>Preencha o formulário a seguir:</h1>
+            <form class="formulario"  action="">
+                <label for="nome">Nome Completo:</label>
+                <input type="text">
+
+                <label for="email">Email:</label>
+                <input type="email">
+
+                <label for="tipo">Tipo de ingresso:</label>
+                <select name="ingresso">
+                    <option value="vazio"></option>
+                    <option value="pista">Pista</option>
+                    <option value="premium">Premium</option>
+                    <option value="cadeiras">Cadeiras</option>
+                </select>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento">
+                
+                <button type="button">Avançar!<span class="material-symbols-outlined">arrow_forward</span></button>
+                
+            </form>
+        </section>
 
     </main>
 
@@ -48,7 +79,7 @@
                     <li><a href="#"><img src="img/icon-twitter.png" alt="Twitter"></a></li>
             </ul>
         </div>
-        
+
         <div class="right-footer">
             <p class="creditos">Desenvolvido por Alura.</p>
             <p class="creditos">Projeto fictício sem fins comerciais.</p>

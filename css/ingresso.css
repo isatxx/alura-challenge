@@ -4,7 +4,7 @@
 :root {
     --fonte-titulo: 'Calistoga', cursive;
     --fonte-texto: 'Raleway', sans-serif;
-    --cor-fonte-titulo: #444444;
+    --cor-fonte: #444444;
     
     --cor-gradiente: linear-gradient(0deg, #facf9d 0%, #fcf0dd 50%, #bfdae6 100%);
     --cor-datas: #DF9010;
@@ -14,4 +14,50 @@
 /*PAGE GRADIENT*/
 body {
     background: var(--cor-gradiente);
+}
+
+/*BANNER*/
+.banner {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.banner h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte);
+    font-size: clamp(2.375rem, 1.725rem + 2.6vw, 4rem);
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+}
+.banner img {
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    height: 300px;
+    opacity: 40%;
+}
+
+/*CONTEUDO*/
+h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte);
+    font-size: 32px;
+    text-align: center;
+    padding: 32px;
+}
+
+
+.formulario {
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte);
+    font-size: 32px;
+    font-weight: 700;
+
+    padding: 0 32px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
