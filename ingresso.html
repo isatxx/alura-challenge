@@ -42,24 +42,35 @@
         <section>
             <h1>Preencha o formulário a seguir:</h1>
             <form class="formulario"  action="">
-                <label for="nome">Nome Completo:</label>
-                <input type="text">
+                <div class="nome-email">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text">
+                    <label for="email">Email:</label>
+                    <input type="email">
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email">
-
-                <label for="tipo">Tipo de ingresso:</label>
-                <select name="ingresso">
-                    <option value="vazio"></option>
-                    <option value="pista">Pista</option>
-                    <option value="premium">Premium</option>
-                    <option value="cadeiras">Cadeiras</option>
-                </select>
-
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" name="nascimento">
+                <div class="ingresso-nascimento">
+                    <div class="ingresso">
+                        <label for="tipo">Tipo de ingresso:</label>
+                        <select name="ingresso">
+                            <option value="null"></option>
+                            <option value="pista">Pista</option>
+                            <option value="premium">Premium</option>
+                            <option value="cadeiras">Cadeiras</option>
+                        </select>
+                    </div>
                 
+                    <div class="nascimento">
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" name="nascimento">
+                    </div>
+                
+                </div>
+            
+
+            <div class="form-botao">
                 <button type="button">Avançar!<span class="material-symbols-outlined">arrow_forward</span></button>
+            </div>
                 
             </form>
         </section>

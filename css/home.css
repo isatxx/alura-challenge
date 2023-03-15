@@ -98,6 +98,11 @@ body {
     text-align: center;
 }
 
+.botao-ticket:active {
+    transform: translateY(3px);
+    box-shadow: 2px 2px 0px 0px #444444df;
+  }
+
 /*LINE-UP*/
 .lineup h2 {
     font-family: var(--fonte-titulo);
