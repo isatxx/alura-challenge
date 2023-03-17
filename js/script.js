@@ -10,20 +10,3 @@ function toggleMenu(){
 }
 menuHamburguer.addEventListener("click", toggleMenu);
 
-
-/* TIRAR DUVIDA
-const setas = document.querySelector(".dropdown-icon");
-const respostas = document.querySelector(".resposta");
-
-function dropDown() {
-    if(respostas.classList.contains('resposta-dropped')) {
-       respostas.classList.remove('resposta-dropped');
-    } else {
-        this.classList.add('resposta-dropped');
-    }
-}
-
-setas.forEach((elemento) => {
-    elemento.addEventListener("click", dropDown);
-})
-*/

@@ -50,38 +50,62 @@ h1 {
     text-align: center;
     padding: 32px;
 }
-.perguntas-frequentes h2 {
+
+#accordion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#accordion li {
+    width: 100%;
+    margin-bottom: 32px;
+    background-color: white;
+} 
+
+#accordion li label {
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+
     font-family: var(--fonte-texto);
     color: var(--cor-fonte-subtitulo);
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
-    padding: 8px;
 }
-.perguntas-frequentes p {
+.content p {
     font-family: var(--fonte-texto);
     color: var(--cor-fonte);
     font-size: 16px;
     line-height: 24px;
-    padding: 16px;
+    padding: 10px 16px;
 }
 
-.perguntas-frequentes {
-    padding: 0 32px 16px 32px;
+.arrow-icon {
+    transform: rotate(90deg);
+    font-size: 16px;
 }
-
-.pergunta {
-    background-color: var(--cor-principal);
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
+#accordion label + input[type="radio"] {
+    display: none;
 }
-
-.resposta {
+.content {
     background-color: var(--cor-secundaria);
-
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content {
+    max-height: 500px;
 }
 
-.resposta-dropped {
-    display: block;
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #accordion {
+        max-width: 650px;
+    }
 }
