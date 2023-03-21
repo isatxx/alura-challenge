@@ -15,3 +15,121 @@
 body {
     background: var(--cor-gradiente);
 }
+
+/*BANNER*/
+.banner {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.banner h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte-titulo);
+    font-size: clamp(2.375rem, 1.725rem + 2.6vw, 4rem);
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+}
+.banner img {
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    height: 300px;
+    opacity: 40%;
+}
+
+/*CONTEUDO*/
+.conteudo h1 {
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte-titulo);
+    font-size: 30px;
+    text-align: center;
+    margin: 32px;
+    font-weight: 700;
+}
+
+.ingresso-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--cor-gradiente);
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 4px 4px 8px 0px #00000026;
+    margin-bottom: 64px;
+
+}
+
+.ingresso-topo {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ingresso-topo img {
+    height: 26px;
+    margin: 32px;
+}
+
+.ingresso {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingresso-qrcode {
+    width: 150px;
+    margin-bottom: 32px;
+    align-self: center;
+}
+
+.ingresso-dados {
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte-titulo);
+    align-self: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.ingresso-dados h2 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.ingresso-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 600;
+}
+
+
+
+/*MEDIA QUERIES*/ 
+@media screen and (min-width: 768px) {
+    .conteudo {
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ingresso-qrcode {
+        margin-left: 16px;
+    }
+
+    .ingresso {
+        flex-direction: row;
+        justify-content: left;
+        gap: 32px;
+    }
+
+    .ingresso-dados {
+        justify-content: center;
+        text-align: left;
+        gap: 8px;
+    }
+
+}
